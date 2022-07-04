@@ -13,7 +13,7 @@ for i in range(len(nameofbook)):
     print(nameofbook[i].text, priceofbook[i].text)
 
 header = ["name of book", 'price']
-with open('booksDatasetAmazon.csv', 'w', encoding='UTF8', newline='') as filecsv:
+with open('Books_Amazon_Dataset.csv', 'w', encoding='UTF8', newline='') as filecsv:
     writer = csv.writer(filecsv, delimiter=',')
     writer.writerow(header)
     for i in range(len(nameofbook)):
